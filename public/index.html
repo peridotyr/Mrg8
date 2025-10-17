@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <!-- ✅ 기본 문자 인코딩 (한글 깨짐 방지) -->
+    <meta charset="UTF-8" />
+
+    <!-- ✅ 반응형 화면 설정 (모바일에서도 화면 비율 유지) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ 앱/사이트 이름 (브라우저 탭 제목) -->
+    <title>CCMarket | 대학생 안심 거래 서비스</title>
+
+    <!-- ✅ PWA 앱 설치용 manifest 연결 -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ✅ 브라우저 탭 / 북마크 아이콘 -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- ✅ 모바일 상단바(주소창) 색상 지정 -->
+    <meta name="theme-color" content="#4F46E5" />
+
+    <!-- ✅ 기본 설명 (검색엔진, 미리보기용) -->
     <meta
       name="description"
-      content="중고거래 PWA 애플리케이션"
+      content="CCMarket은 대학생을 위한 안심 중고 거래 PWA 서비스입니다."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>중고거래</title>
+
+    <!-- ✅ 오픈그래프 (SNS 미리보기 카드 정보) -->
+    <meta property="og:title" content="CCMarket - 대학생 안심 거래 서비스" />
+    <meta property="og:description" content="대학생을 위한 안전한 중고거래 플랫폼" />
+    <meta property="og:image" content="/icons/icon-512x512.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ccmarket.com" />
+
+    <!-- ✅ 웹앱 아이콘 (iOS 전용) -->
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <!-- ✅ 기본 스타일 시트 (CRA 빌드 시 자동 연결됨) -->
+    <!-- <link rel="stylesheet" href="/static/css/main.css" /> -->
   </head>
+
   <body>
+    <!-- ✅ JS 비활성화 상태에서 안내 메시지 표시 -->
     <noscript>이 앱을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
+
+    <!-- ✅ 리액트 앱이 들어올 자리 -->
     <div id="root"></div>
+
+    <!-- ✅ CRA 빌드 시 자동으로 JS 번들(main.js) 주입됨 -->
+    <!-- 개발 중에는 webpack dev 서버가 이 파일을 기반으로 앱을 띄움 -->
   </body>
-</html> 
+</html>

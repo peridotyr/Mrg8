@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: 
+# 검색엔진 안내용 파일
+# = 누구든 이 사이트의 모든 페이지를 자유롭게 크롤링해도 되는 의미
